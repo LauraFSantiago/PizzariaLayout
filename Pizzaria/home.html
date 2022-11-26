@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- Font Awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/home.css">
+    <title>Pizzaria</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <!--<a href="home.html" class="navbar-brand">-->
+            <img src="imgs/pizza.png" id="brand-logo"><!--alt="Pizzaria do João"-->
+        <div id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="home.html" class="nav-link">João Pizza's</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<body>
+
+ 
+    
+    <div id="main-contanier">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Monte sua pizza:</h2>
+                    <form method="POST" id="pizza-form">
+                        <div class="form-group">
+                            <label for="borda">Borda:</label>
+                            <select name="borda" id="borda" class="form-control">
+                                <option value="">Selecione a borda</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="massa">Massa:</label>
+                            <select name="massa" id="massa" class="form-control">
+                                <option value="">Selecione a massa</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sabores">Sabores: (Máximo 3)</label>
+                            <select multiple name="sabores[]" id="sabores" class="form-control">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Efetuar Pedido!">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
